@@ -42,6 +42,7 @@ public class EqdpManipulationImpl : ManipulationImpl
 
 public class EqpManipulationImpl : ManipulationImpl
 {
+    [JsonConverter(typeof(JsonStringNumberConverter))]
     public ulong Entry { get; set; }
     [JsonConverter(typeof(JsonStringNumberConverter))]
     public int SetId { get; set; }
