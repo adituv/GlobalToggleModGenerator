@@ -16,10 +16,10 @@ public static class Program
     
     // Redirected file paths
     private const string HEAD_PATH = "common\\1\\c0101e0279_met.mdl";
-    private const string BODY_PATH = "common\\2\\c0101e0001_top.mdl";
-    private const string HAND_PATH = "common\\3\\c0101e0001_glv.mdl";
-    private const string LEGS_PATH = "common\\4\\c0101e0001_dwn.mdl";
-    private const string FEET_PATH = "common\\5\\c0101e0001_sho.mdl";
+    private const string BODY_PATH = "common\\2\\c0201e0001_top.mdl";
+    private const string HAND_PATH = "common\\3\\c0201e0001_glv.mdl";
+    private const string LEGS_PATH = "common\\4\\c0201e0001_dwn.mdl";
+    private const string FEET_PATH = "common\\5\\c0201e0001_sho.mdl";
     
     // EQP group bitfield values
     private const ulong HEAD_EQP_BITS = 0xB7F_E100_0000_0000UL;
@@ -94,7 +94,7 @@ public static class Program
         for (int i = 1; i <= 9999; i++)
         {
             AddSetToOption(ref headGroup, i, EquipSlot.Head, HEAD_PATTERN, HEAD_PATH, HEAD_EQP_BITS, HEAD_EQDP_BITS);
-            AddSetToOption(ref bodyGroup, i, EquipSlot.Head, BODY_PATTERN, BODY_PATH, BODY_EQP_BITS, BODY_EQDP_BITS);
+            AddSetToOption(ref bodyGroup, i, EquipSlot.Body, BODY_PATTERN, BODY_PATH, BODY_EQP_BITS, BODY_EQDP_BITS);
             AddSetToOption(ref handGroup, i, EquipSlot.Hands, HAND_PATTERN, HAND_PATH, HAND_EQP_BITS, HAND_EQDP_BITS);
             AddSetToOption(ref legsGroup, i, EquipSlot.Legs, LEGS_PATTERN, LEGS_PATH, LEGS_EQP_BITS, LEGS_EQDP_BITS);
             AddSetToOption(ref feetGroup, i, EquipSlot.Feet, FEET_PATTERN, FEET_PATH, FEET_EQP_BITS, FEET_EQDP_BITS);
